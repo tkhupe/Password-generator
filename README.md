@@ -24,17 +24,18 @@ If your README is long, add a table of contents to make it easy for users to fin
 ## Installation
 
 Visit the page and start generating your passwords following the guided prompts. 
+ 
+
 
 ## Usage
 
 Provide instructions and examples for use. Include screenshots as needed.
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ```md
-    ![alt text](assets/images/Screenshot.png)
-    ```
-    [src = ]../assets/images/Screenshot.png
+    
+![alt text](assets/images/Screenshot.png)
+    
+    
 
 ## Credits
 
