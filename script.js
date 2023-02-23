@@ -1,22 +1,22 @@
 // Assignment code here
-
 let lenghtInput = document.querySelector("#password-length");
 let containUpper = document.querySelector("#contains-uppercase");
 let containLower = document.querySelector("#contains-lowercase");
 let containNumber = document.querySelector("#contains-number");
 let containSymbol = document.querySelector("#contains-symbols");
-
+let generateBtn = document.querySelector("#generate");
 
 var generatePassword = function () {
   const passwordLength = lenghtInput.value;
  let characters ="";
 //  let characters = []
- let  symbols = {
+ let symbols = {
   uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   number: "0123456789",
   lowercase: "abcdefghijklmnopqrstuvwxyz",
   symb: "!@#$%^&*(){}[]=<>/,."
  }
+
  let characterList ="";
  if (containUpper.checked ==true ){
   characterList += symbols.uppercase;
@@ -35,18 +35,15 @@ var generatePassword = function () {
       let character = characterList[(Math.floor(Math.random() * characterList.length))];
       characters +=character;
       // characters.push(character)
-
     }
     return characters;
     // return characters.join("");
   }
-
-
-
-
 // Get references to the #generate element
-let generateBtn = document.querySelector("#generate");
-let step=0;// Write password to the #password input
+// Write password to the #password input
+// let step=0;
+// let generateBtn = document.querySelector("#generate");
+
 function writePassword() {
   if(lenghtInput.value < 8 || lenghtInput.value > 128) {
     alert("Must enter between 8 and 128 characters and must contain at least an uppercase, a lowercase, a number, or a symbol")
@@ -57,8 +54,7 @@ function writePassword() {
   alert("Must enter between 8 and 128 characters and must contain at least an uppercase, a lowercase, a number, or a symbol")
     return;
  }
-  // if(containUpper.checked ==false)
-
+  
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
