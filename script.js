@@ -33,12 +33,7 @@ var generatePassword = function () {
  if (containSymbol.checked ==true ){
   characterList += symbols.symb;
  }
-//  const hasUppercase = containUpper.checked;
-//  const hasLowercase = containLower.checked;
-//  const hasNumber = containNumber.checked;
-//  const hasSymbol = containSymbol.checked  {
-//   alert("true", "true", "true", "true", "true")
-//  }
+
     for (i = passwordLength ;  i > 0; i--) {
       let character = characterList[(Math.floor(Math.random() * characterList.length))];
       characters +=character;
