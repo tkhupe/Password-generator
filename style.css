@@ -65,6 +65,7 @@ span[data-desc]:hover::after {
   bottom: 24px;
   min-width: 200px;
   border: 1px #aaaaaa solid;
+  border-radius: 10px;
   background-color: aqua;
   padding: 12px;
   color: black;
