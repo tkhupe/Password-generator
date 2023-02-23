@@ -6,9 +6,6 @@ let containLower = document.querySelector("#contains-lowercase");
 let containNumber = document.querySelector("#contains-number");
 let containSymbol = document.querySelector("#contains-symbols");
 
-let minimumCharacters = function () {
-  return 10 + Math.floor(Math.random() * 10)
-}
 
 var generatePassword = function () {
   const passwordLength = lenghtInput.value;
