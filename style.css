@@ -32,7 +32,7 @@ header {
 
 .card {
   background-color: lightgreen;
-  border-radius: 5px;
+  border-radius: 20px;
   border-width: 1px;
   box-shadow: rgba(0, 0, 0, 0.15) 10px 10px 10px 10px;
   color: hsl(206, 17%, 28%);
