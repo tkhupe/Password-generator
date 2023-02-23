@@ -70,8 +70,8 @@ span[data-desc]:hover::after {
   color: black;
   font-size: 80%;
   z-index: 1;
-
 }
+
 
 .card-footer {
   text-align: center;
